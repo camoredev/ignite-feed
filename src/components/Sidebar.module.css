@@ -1,0 +1,58 @@
+.sidebar {
+  background: var(--gray-800);
+  border-radius: 8px;
+  overflow: hidden; /* faz com que a imagem fique no formato da div */
+}
+
+.sidebar .cover {
+  width: 100%;
+  height: 72px;
+  object-fit: cover;
+}
+
+.sidebar .profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: calc(0px - 1.5rem - 6px);
+}
+
+.profile strong {
+  margin-top: 1rem;
+  color: var(--gray-100);
+  line-height: 1.6;
+}
+
+.profile span {
+  font-size: 0.875rem;
+  color: var(--gray-500);
+  line-height: 1.6;
+}
+
+.sidebar footer {
+  border-top: 1px solid var(--gray-600);
+  margin-top: 1.5rem;
+  padding: 1.5rem 2rem;
+}
+
+.sidebar footer a {
+  background: transparent;
+  color: var(--green-500);
+  border: 1px solid var(--green-500);
+  padding: 0 1.5rem;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  height: 50px;
+  font-weight: 700;
+  font-size: 1rem;
+  gap: 0.5rem;
+}
+
+.sidebar footer a:hover {
+  background: var(--green-500);
+  color: var(--white);
+  transition: color 0.2s ease-in-out, background 0.2s ease-in-out;
+}
